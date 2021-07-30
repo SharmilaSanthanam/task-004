@@ -20,18 +20,18 @@ request.onload=function(){
     }
   });
     console.log(rdata2);
-
-    var sum=0;
+//normal for loop addition method
+    /*var sum=0;
     for(var i=0;i<250;i++){
     
     //console.log(data[i].population);
     sum += data[i].population;
      }
-    console.log(sum);
+    console.log(sum);*/
    
-    /*for(var i=0;i<250;i++){
-    const sum=data[i].population.reduce((acc,ele)=>acc+ele);
-    console.log(sum);
-    }*/
+ //using reduce of array function method   
+    const rdata3=data.reduce((acc,ele)=>acc+ele.population,0);
+    console.log(rdata3);
+    
     
 }
